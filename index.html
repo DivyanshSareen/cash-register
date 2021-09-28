@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Register</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Cash Register🧾</h1>
+    </header>
+    <div id="container">
+      <label
+        >Bill Amount:
+        <input id="bill" type="number" min="0" value="bill" />
+      </label>
+      <label
+        >Cash Paid:
+        <input id="paid" type="number" min="0" value="paid" />
+      </label>
+      <button id="calc">Calculate</button>
+    </div>
+    <h3>
+      Balance:
+    </h3>
+    <div id="tab">
+      <table>
+        <thead>
+          <tr>
+            <th>Notes</th>
+            <th>2000</th>
+            <th>500</th>
+            <th>100</th>
+            <th>20</th>
+            <th>10</th>
+            <th>5</th>
+            <th>1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data"></tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
